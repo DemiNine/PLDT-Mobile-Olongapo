@@ -1,6 +1,6 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="pldtmobile" version="1.0" versionCode="15">
 	<script id="legislativeolongapo"/>
-		<name>PLDT Mobile Olongapo</name>
+		<name>PLDTmo</name>
 		<description>A Mobile Application for Online Inquiry</description>
 		<author>Team With-OUT</author>
 		
