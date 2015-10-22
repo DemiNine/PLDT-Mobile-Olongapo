@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PLDT Mobile Olongapo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+    $('#btnAdd').click(function(){
+            $.ajax({
+                type:'POST',
+                url:'addon.php',
+                dataType: "html",  
+                data: $('#frmAdd').serialize(),
+                success:function(data) {
+                    if(data) { 
+                            alert(data);
+                    } else {
+                        alert("Something Went Wrong !");
+                    }
+                }
+        });
+        });
+         
+    });
+
+$(document).ready(function(){
+    $('#btnAdd2').click(function(){
+            $.ajax({
+                type:'POST',
+                url:'addon.php',
+                dataType: "html",  
+                data: $('#frmAdd2').serialize(),
+                success:function(data) {
+                    if(data) {   
+                            alert(data);
+                    } else {
+                        alert("Something Went Wrong !");
+                    }
+                }
+        });
+        });
+         
+    });
+$(document).ready(function(){
+    $('#btnAdd3').click(function(){
+            $.ajax({
+                type:'POST',
+                url:'addon.php',
+                dataType: "html",  
+                data: $('#frmAdd3').serialize(),
+                success:function(data) {
+                    if(data) {   
+                            alert(data);
+                    } else {
+                        alert("Something Went Wrong !");
+                    }
+
+                }
+        });
+        });
+         
+    });
+$(document).ready(function(){
+    $('#btnAdd4').click(function(){
+            $.ajax({
+                type:'POST',
+                url:'addon.php',
+                dataType: "html",  
+                data: $('#frmAdd4').serialize(),
+                success:function(data) {
+                    if(data) {   
+                            alert(data);
+                    } else {
+                        alert("Something Went Wrong !");
+                    }
+                }
+        });
+        });
+         
+    });
+
+
+
+    </script>
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">PLDT MO</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                       </li>
+                   <li><a href="index.html"><span class="glyphicon glyphicon-home menu-glyph" ></span> Home</a>
+                        
+                    </li>
+                    <li>
+                        <a href="promo.html"><span class="glyphicon glyphicon-shopping-cart menu-glyph"></span> Services</a>
+                    </li>
+                    <li>
+                        <a  href="bayadcenter.html"><span class="glyphicon glyphicon-bitcoin menu-glyph"></span>ayad-Center</a>
+                    </li>
+                    <li>
+                         <a href="gps.html"><span class="glyphicon glyphicon-map-marker menu-glyph" ></span> Use GPS</a>
+                    </li>
+                    <li>
+                         <a href="offline.html"><span class="glyphicon glyphicon-ban-circle menu-glyph" ></span>ffline</a>
+                    </li>
+                    <li>
+                         <a href="about.html"><span class="glyphicon glyphicon-info-sign menu-glyph" ></span>About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To</div>
+                <div class="intro-heading"><div class="intro-heading" align = "center"><img src="img/icon.png" class="img-responsive" alt=""></div></div>
+                
+            </div>
+        </div>
+    </header>
+
+<div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-14 text-center">
+                    <div id="carousel-example-generic" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="img-responsive img-full" src="img/famcam2.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/famcam.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/famcam3.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+
+                    </div>
+    
+<!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">The Regine Series!</h2>
+                    <h3 class="section-subheading text-muted">Choose the design that best fits your home.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-info-circle fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/classic2.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-info-circle fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cordless2.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-info-circle fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cordr2.png" class="img-responsive" alt="">
+                    </a>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-info-circle fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cordw2.png" class="img-responsive" alt="">
+                    </a>
+                   
+    </section>  
+    
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Team With-OUT</span>
+                </div>
+                
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+             
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Classic</h2>
+                            <p class="item-intro text-muted">P75/month for 18 months</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/mclassic.png" alt="">
+                            <p><ul>
+                                <li>Built-in Caller ID Display</li>
+                                <li>Last Number Redial</li>
+                                <li>Mute/Flash/Pause Function</li>
+                            </ul></p>
+                            
+                                         
+                                         <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <a class="panel-default" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        <div class="panel-heading" style="background-color:yellow;">
+                            <h6 class="panel-title" align="center">
+                             Inquire for this Add-On
+                            </h6>
+                        </div>
+                        </a>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+                             <div class="col-md-8">
+                 
+                </div>
+
+                <hr>
+
+                    <form id="frmAdd" method="POST">
+        <input type="text" class="form-control" name="txtfname" placeholder="Enter Your First Name" required><br />
+        <input type="text" class="form-control" name="txtmname" placeholder="Enter Your Middle Name" required><br />
+        <input type="text" class="form-control" name="txtlname" placeholder="Enter Your Last Name" required><br />
+        <input type="number" class="form-control" name="txtmobile" placeholder="Enter Your Mobile Number" required> <br />
+        <input type="email" class="form-control" name="txtemail" placeholder="Enter Your Valid Email Address" required><br />
+        <input type="text" class="form-control" name="txtaddress" placeholder="Enter Your Home Address" required><br />
+        <input type="text" class="form-control" name="txtbaddress" placeholder="Enter Your Billing Address" required> <br />
+        <select name="txtplan" class="form-control">
+        <option value="0" disabled="" >Your Current Plan:</option>
+        <option>Plan 990</option>
+        <option>Plan 999</option>
+        <option>Plan 1250</option>
+        <option>Plan 1299</option>
+        <option>Plan 1499</option>
+        <option>Plan 1599</option>
+        <option>Plan 1849</option>
+        <option>Plan 1995</option>
+        <option>Plan 1999</option>
+        <option>Plan 2099</option>
+        <option>Plan 3095</option>
+        <option>Plan 4100</option>
+        </select><br />
+
+        <button type="button" id="btnAdd" value="button"  class="btn btn-info" <i class="fa fa-check" >Inquire</i></button> 
+                    </form>
+ 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="submit" id="close" value="Close" class="form-control" data-dismiss="modal" style="background-color:skyblue;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Cordless</h2>
+                            <p class="item-intro text-muted">P99/month for 24 months</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/mcordless.png" alt="">
+                            <p><ul>
+                                <li>Built-in Caller ID Display</li>
+                                <li>Answering Machine</li>
+                                <li>Phone Book</li>
+                                <li>Call Log</li>
+                            </ul></p>
+                            
+                                                            
+                                         <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <a class="panel-default" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        <div class="panel-heading" style="background-color:yellow;">
+                            <h6 class="panel-title" align="center">
+                             Inquire for this Add-On
+                            </h6>
+                        </div>
+                        </a>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                             <div class="col-md-8">
+                 
+                </div>
+
+                <hr>
+
+                    <form id="frmAdd2" method="POST">
+        <input type="text" class="form-control" name="txtfname" placeholder="Enter Your First Name" required><br />
+        <input type="text" class="form-control" name="txtmname" placeholder="Enter Your Middle Name" required><br />
+        <input type="text" class="form-control" name="txtlname" placeholder="Enter Your Last Name" required><br />
+        <input type="number" class="form-control" name="txtmobile" placeholder="Enter Your Mobile Number" required> <br />
+        <input type="email" class="form-control" name="txtemail" placeholder="Enter Your Valid Email Address" required><br />
+        <input type="text" class="form-control" name="txtaddress" placeholder="Enter Your Home Address" required><br />
+        <input type="text" class="form-control" name="txtbaddress" placeholder="Enter Your Billing Address" required> <br />
+        <select name="txtplan" class="form-control">
+        <option value="0" disabled="" >Your Current Plan:</option>
+        <option>Plan 990</option>
+        <option>Plan 999</option>
+        <option>Plan 1250</option>
+        <option>Plan 1299</option>
+        <option>Plan 1499</option>
+        <option>Plan 1599</option>
+        <option>Plan 1849</option>
+        <option>Plan 1995</option>
+        <option>Plan 1999</option>
+        <option>Plan 2099</option>
+        <option>Plan 3095</option>
+        <option>Plan 4100</option>
+        </select><br />
+
+        <button type="button" id="btnAdd2" value="button"  class="btn btn-info" <i class="fa fa-check" >Inquire</i></button> 
+
+                    </form>
+
+ 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="submit" id="close" value="Close" class="form-control" data-dismiss="modal" style="background-color:skyblue;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Corded-W</h2>
+                            <p class="item-intro text-muted">P75/month for 18 months</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/mcordw.png" alt="">
+                           <p><ul>
+                                <li>Built-in Caller ID Display</li>
+                                <li>Last number redial</li>
+                                <li>Speed Dial</li>
+                                <li>Call Log</li>
+                            </ul></p>
+                                                           
+                                         <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <a class="panel-default" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        <div class="panel-heading" style="background-color:yellow;">
+                            <h6 class="panel-title" align="center">
+                             Inquire for this Add-On
+                            </h6>
+                        </div>
+                        </a>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                             <div class="col-md-8">
+                 
+                </div>
+
+                <hr>
+
+                    <form id="frmAdd3" method="POST">
+        <input type="text" class="form-control" name="txtfname" placeholder="Enter Your First Name" required><br />
+        <input type="text" class="form-control" name="txtmname" placeholder="Enter Your Middle Name" required><br />
+        <input type="text" class="form-control" name="txtlname" placeholder="Enter Your Last Name" required><br />
+        <input type="number" class="form-control" name="txtmobile" placeholder="Enter Your Mobile Number" required> <br />
+        <input type="email" class="form-control" name="txtemail" placeholder="Enter Your Valid Email Address" required><br />
+        <input type="text" class="form-control" name="txtaddress" placeholder="Enter Your Home Address" required><br />
+        <input type="text" class="form-control" name="txtbaddress" placeholder="Enter Your Billing Address" required> <br />
+        <select name="txtplan" class="form-control">
+        <option value="0" disabled="" >Your Current Plan:</option>
+        <option>Plan 990</option>
+        <option>Plan 999</option>
+        <option>Plan 1250</option>
+        <option>Plan 1299</option>
+        <option>Plan 1499</option>
+        <option>Plan 1599</option>
+        <option>Plan 1849</option>
+        <option>Plan 1995</option>
+        <option>Plan 1999</option>
+        <option>Plan 2099</option>
+        <option>Plan 3095</option>
+        <option>Plan 4100</option>
+        </select><br />
+
+        <button type="button" id="btnAdd3" value="button"  class="btn btn-info" <i class="fa fa-check" >Inquire</i></button> 
+                    </form>
+ 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    <input type="submit" id="close" value="Close" class="form-control" data-dismiss="modal" style="background-color:skyblue;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Corded-R</h2>
+                            <p class="item-intro text-muted">P75/month for 18 months.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/mcordr.png" alt=""><p><ul>
+                                <li>Built-in Caller ID Display</li>
+                                <li>Speed Dial</li>
+                                <li>Call Log</li>
+                            </ul></p>
+                                                            
+                                         <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <a class="panel-default" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                        <div class="panel-heading" style="background-color:yellow;">
+                            <h6 class="panel-title" align="center">
+                             Inquire for this Add-On
+                            </h6>
+                        </div>
+                        </a>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="panel-body">
+                             <div class="col-md-8">
+                 
+                </div>
+
+                <hr>
+
+                    <form id="frmAdd4" method="POST">
+        <input type="text" class="form-control" name="txtfname" placeholder="Enter Your First Name" required><br />
+        <input type="text" class="form-control" name="txtmname" placeholder="Enter Your Middle Name" required><br />
+        <input type="text" class="form-control" name="txtlname" placeholder="Enter Your Last Name" required><br />
+        <input type="number" class="form-control" name="txtmobile" placeholder="Enter Your Mobile Number" required> <br />
+        <input type="email" class="form-control" name="txtemail" placeholder="Enter Your Valid Email Address" required><br />
+        <input type="text" class="form-control" name="txtaddress" placeholder="Enter Your Home Address" required><br />
+        <input type="text" class="form-control" name="txtbaddress" placeholder="Enter Your Billing Address" required> <br />
+        <select name="txtplan" class="form-control">
+        <option value="0" disabled="" >Your Current Plan:</option>
+        <option>Plan 990</option>
+        <option>Plan 999</option>
+        <option>Plan 1250</option>
+        <option>Plan 1299</option>
+        <option>Plan 1499</option>
+        <option>Plan 1599</option>
+        <option>Plan 1849</option>
+        <option>Plan 1995</option>
+        <option>Plan 1999</option>
+        <option>Plan 2099</option>
+        <option>Plan 3095</option>
+        <option>Plan 4100</option>
+        </select><br />
+
+        <button type="button" id="btnAdd4" value="button"  class="btn btn-info" <i class="fa fa-check" >Inquire</i></button> 
+                    </form>
+ 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="submit" id="close" value="Close" class="form-control" data-dismiss="modal" style="background-color:skyblue;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+fieldset{
+
+	width: 300px;
+	font-weight: bold;
+}	
+
+.Inquire_Set label{
+		float: left;
+		width: 100px;
+	}

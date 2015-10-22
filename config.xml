@@ -1,0 +1,40 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="pldtmobile" version="1.0" versionCode="15">
+	<script id="legislativeolongapo"/>
+		<name>PLDT Mobile Olongapo</name>
+		<description>A Mobile Application for Online Inquiry</description>
+		<author>Team With-OUT</author>
+		
+		<gap:platforms>
+			<gap:platform name="ios"/>
+			<gap:platform name="android"/>
+			<gap:platform name="webos"/>
+			<gap:platform name="symbian.wrt"/>
+			<gap:platform name="blackberry" project="widgets"/>
+		</gap:platforms>
+
+		<gap:plugin name="org.apache.cordova.media"/>
+		<icon src="img/log.png" gap:role="default"/>
+
+		<preference name="phonegap-version" value="3.6.3"/>
+		<feature name="http://api.phonegap.com/1.0/device"/>
+		<feature name="http://api.phonegap.com/1.0/media"/>
+		<access origin="*" subdomains="true"/>
+		<access uri="*" subdomains="true"/>
+		<access uri="http://google.com" subdomains="true"/>
+		<feature name="http://api.phonegap.com/1.0/network"/>
+		
+		<feature name="InAppBrowser">
+			<param name="android-package" value="org.apache.cordova.InAppBrowser"/>
+		</feature>
+
+		<feature name="Media">
+			<param name="android-package" value="org.apache.cordova.media.AudioHandler"/>
+		</feature>
+
+		<preference name="orientation" value="auto"/>
+		<preference name="fullscreen" value="true"/>
+		<preference name="target-device" value="universal"/>
+		<preference name="PageLength" 				  value="0"/>
+	<preference name="PaginationBreakingMode"     value="page"/>
+	<preference name="PaginationMode" 			  value="leftToRight"/>
+</widget>
