@@ -59,7 +59,7 @@
     $('#btnSend').click(function(){
             $.ajax({
                 type:'POST',
-                url:'feedback.php',
+                url:'http://gcccs.org/PLDTMO/Capstone/feedback.php',
                 dataType: "html",  
                 data: $('#frmFeedback').serialize(),
                 success:function(data) {
